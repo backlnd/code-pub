@@ -3,29 +3,50 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import netlightLogo from './netlight.png';
 import { Game } from './BoardGame';
+import InfoPage from './InfoPage';
 
-console.log("Netlight", netlightLogo);
+let activePage = "home";
 
-// ========================================
-
-function Header() {
+function Header({ setActivePage }) {
   return (
     <div className="header">
-      <img src={netlightLogo} width="200" />
-      <div style={{ fontSize: "50px" }}>Code Pub</div>
+      <button type="button" className="button info" onClick={() => setActivePage("info")}>i</button>
+      <button type="button" className="button logo" onClick={() => setActivePage("home")}>
+        <img src={netlightLogo} width="200" />
+      </button>
+      <div className="name">{`{ Write your name here }`}</div>
+      <div className="code-pub">Code Pub</div>
     </div>
   );
 }
 
-function Main() {
-  return (
-    <div className="main">
-      <Header />
-      <div className="content">
-        <Game />
+function Footer() {
+  return <div className="footer" />;
+}
+
+class Main extends React.Component {
+  constructor(props) {
+    super(props);
+    this.activePage = "home";
+  }
+
+  setActivePage(pageId) {
+    this.activePage = pageId;
+    this.forceUpdate();
+  }
+
+  render() {
+    return (
+      <div className="main">
+        <Header setActivePage={this.setActivePage.bind(this)} />
+        <div className="content">
+          {this.activePage === "home" && <Game />}
+          {this.activePage === "info" && <InfoPage />}
+        </div>
+        <Footer />
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 ReactDOM.render(

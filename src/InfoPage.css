@@ -1,0 +1,16 @@
+.InfoPage {
+  padding: 30px 80px;
+  margin: 0 auto;
+}
+
+.code {
+  font-family: monospace;
+  background-color: #3c3c3c;
+  color: white;
+  padding: 5px 20px;
+}
+
+.inline {
+  display: inline-block;
+  margin: 0 5px;
+}
