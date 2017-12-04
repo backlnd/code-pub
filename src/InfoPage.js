@@ -15,7 +15,7 @@ class InfoPage extends React.Component {
           <li>Yarn or Npm</li>
           <li>Git</li>
           <li>Browser (preferably chrome)</li>
-          <li>Optional: download react dev tools from chrome plugins</li>
+          <li>Optional: download <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en">react dev tools</a> from chrome plugins</li>
         </hl>
 
         <h2 className="margin-top">Before you can begin</h2>
