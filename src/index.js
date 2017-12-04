@@ -21,7 +21,11 @@ function Header({ setActivePage }) {
 }
 
 function Footer() {
-  return <div className="footer" />;
+  return (
+    <div className="footer">
+      <span>Backlnd&trade;</span>
+    </div>
+  );
 }
 
 class Main extends React.Component {

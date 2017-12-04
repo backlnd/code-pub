@@ -10,22 +10,26 @@ class InfoPage extends React.Component {
         <p>If you are already familiar with React developing there will be more
           complicated tasks for you to solve.
           But we will start with all the basics to get everyone started.</p>
-        <h2>Prerequisites</h2>
+        <h2 className="margin-top">Prerequisites</h2>
         <hl>
           <li>Yarn or Npm</li>
           <li>Git</li>
           <li>Browser (preferably chrome)</li>
           <li>Optional: download react dev tools from chrome plugins</li>
         </hl>
-        <h2>Before you can begin</h2>
+
+        <h2 className="margin-top">Before you can begin</h2>
         <p>Start your terminal and checkout the github repository.</p>
-        <span className="code">git checkout xxx</span>
+        <span className="code">git checkout https://github.com/backlnd/code-pub.git</span>
         <p>Move to the checked out directory.</p>
         <span className="code">cd code-pub</span>
         <p>Run the code to be able to view the website.</p>
         <span className="code">yarn start</span>
         <p className="inline">or</p>
         <span className="code">npm run start</span>
+
+        <h2 className="margin-top">Let's begin</h2>
+        <p>We will be following some of the instructions on this page: <a href="https://reactjs.org/tutorial/tutorial.html#getting-started">React Tutorial - Getting started</a></p>
       </div>
     );
   }
