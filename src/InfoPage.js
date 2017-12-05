@@ -29,7 +29,7 @@ class InfoPage extends React.Component {
         <span className="code">npm run start</span>
 
         <h2 className="margin-top">Let's begin</h2>
-        <p>We will be following some of the instructions on this page: <a href="https://reactjs.org/tutorial/tutorial.html#getting-started">React Tutorial - Getting started</a></p>
+        <p>We will be following some of the instructions on this page: <a target="_blank" href="https://reactjs.org/tutorial/tutorial.html#getting-started">React Tutorial - Getting started</a></p>
       </div>
     );
   }
